@@ -1,0 +1,35 @@
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background: rgb(242, 233, 158);
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    list-style: none;
+}
+
+li.done {
+    text-decoration: line-through;
+}
