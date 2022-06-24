@@ -191,13 +191,63 @@ document.title = "Hello! J.S~"; // js로 HTML에 접근하여 수정하기
 // point!! --> document.
 
 // 3.1 HTML in Js------------
+
 document.getElementById("title");
 title.innerText = "Got you!"; // html의 title 내용을 변경
 console.log(title.className); // hello, html에 class="hello" 이므로
+// id를 잘 사용하지 않는다.
 
 
 // 3.2 Searching For Elements------------
-const title = document.querySelector("#hello h1");
-// let title = document.getElementById("hello");
+let title1 = document.querySelector(".hello h1"); // 모든 요소 중 첫 번째만 출력
+let title2 = document.querySelectorAll(".hello h1"); // 모든 요소를 출력
 
-console.log(title);
+/* 아래 둘은 서로 같다, id를 불러오는 것
+const title = document.querySelector("#hello");
+const title = document.getElementById("hello");
+*/
+
+console.log(title1);
+console.log(title2);
+title1.innerText = "Hello";
+
+
+// 3.3-5 Events
+const title3 = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    title3.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    title3.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave() {
+    title3.innerText = "Mouse is gone!";
+}
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+function handleWindowOffline() {
+    alert("SOS no WIFI");
+}
+
+function handleWindowOnline() {
+    alert("ALL GOOOOD");
+}
+
+title3.addEventListener("click", handleTitleClick);
+title3.addEventListener("mouseenter", handleMouseEnter);
+title3.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
