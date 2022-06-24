@@ -160,3 +160,44 @@ const powerRst = calculator4.power(divideRst, timesRst);
 // console.log()를 사용하지 않고 
 // 콘솔창에서 확인하고 싶다면, 변수명을 입력하면 된다.
 // ex. timesRst
+
+
+//------------
+// 함수는 내부에서 외부로 진행된다.
+const age = parseInt(prompt("How old are you?"));
+// parseInt()
+// -> 숫자 값을 string -> num으로 바꿔준다.
+// -> 문자열을 입력하면 NaN을 출력
+// NaN : Not a Number
+console.log(age); // 15
+
+console.log(isNaN(age)); // false
+// isNaN() : 숫자가 아닌지를 판명하는 함수
+
+if(isNaN(age) || age <0) {
+    console.log("Please write a real positive number");
+} else if (age < 18) {
+    console.log("You are too young.");
+} else if (age >= 18 && age <= 50) {
+    console.log("You can drink");
+} else if (age > 50 && age <=80) {
+    console.log("You should exercise");
+} else if (age > 80) {
+    console.log("You can do whatever you want.");
+}
+
+//------------ js로 HTML 호출하기
+document.title = "Hello! J.S~"; // js로 HTML에 접근하여 수정하기
+// point!! --> document.
+
+// 3.1 HTML in Js------------
+document.getElementById("title");
+title.innerText = "Got you!"; // html의 title 내용을 변경
+console.log(title.className); // hello, html에 class="hello" 이므로
+
+
+// 3.2 Searching For Elements------------
+const title = document.querySelector("#hello h1");
+// let title = document.getElementById("hello");
+
+console.log(title);
