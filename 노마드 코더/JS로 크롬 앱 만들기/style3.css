@@ -4,8 +4,19 @@ body {
 
 h1 {
     color: cornflowerblue;
+    transition: color 0.5s ease-in-out;
 }
 
 .active {
-    color: tomato;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.active2 {
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+
+.active3 {
+    color : orange;
 }
