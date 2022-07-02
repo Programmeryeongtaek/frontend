@@ -13,13 +13,13 @@ const reflection = () => {
 
         bar.style.width = `${Math.max(0.001, Math.min(diff, 1200)) / 2}px`
         bar.style.background = 
-            diff > 800
+            diff < 800
                 ? 'red'
-                : diff > 900
+                : diff < 900
                 ? 'yellow'
-                : diff > 1100
+                : diff < 1100
                 ? 'green'
-                : diff > 1200
+                : diff < 1200
                 ? 'yellow'
                 : 'red';
     }

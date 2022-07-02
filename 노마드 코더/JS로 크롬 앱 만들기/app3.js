@@ -16,5 +16,5 @@ function handleMouseLeave() {
 }
 
 h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseEnter", handleMouseEnter);
 h1.addEventListener("mouseLeave", handleMouseLeave);
+h1.addEventListener("mouseEnter", handleMouseEnter);
