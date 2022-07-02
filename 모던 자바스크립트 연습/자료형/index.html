@@ -1,0 +1,29 @@
+<!--아래 스크립트의 결과를 예측해 보세요.
+let name = "Ilya";
+
+alert( `hello ${1}` ); // ?
+
+alert( `hello ${"name"}` ); // ?
+
+alert( `hello ${name}` ); // ?
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "Yeongtaek";
+
+        alert( `hello ${1}` ); // -> hello 1
+        alert( `hello ${"name"}` ); // -> hello name, 큰 따옴표 안에 있으므로 문자열 취급
+        alert( `hello ${name}` ); // -> hello Yeongtaek
+    </script>
+</body>
+</html>
