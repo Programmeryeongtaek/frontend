@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+}
+
+.space {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 100px 100px;
+    width: fit-content;
+}
+
+.space.active {
+    background-color: blue;
+}
+
+.frame {
+    border: 1px solid darkcyan;
+    margin: 50px 0;
+    width: 600px;
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.line {
+    position: absolute;
+    left: 450px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: red;
+}
+
+.bar {
+    position: absolute;
+    left: 100;
+    top: 0;
+    bottom: 0;
+    background: blue;
+}

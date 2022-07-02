@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+
+.space {
+    width: fit-content;
+    padding: 10px 60px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+.space.active {
+    background-color: blue;
+}
+
+.frame {
+    width: 600px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 30px 0;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 500px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: red;
+}
+
+.bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: gray;
+}
